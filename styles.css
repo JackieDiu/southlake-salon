@@ -176,3 +176,37 @@ body {
 .btnPro {
   background-color: #f5c894;
 }
+
+/* Icon Footer */
+
+.socialRow {
+  display: flex;
+}
+
+.socialRow > .centerContainer > ul {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.socialRow > .centerContainer > ul > li {
+  background-color: #2c3e50;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+  Single-colored icons can be modified like so:
+  .icon-name {
+    font-size: 32px;
+    color: red;
+  }
+  ========================================== */
