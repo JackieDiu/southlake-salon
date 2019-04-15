@@ -149,6 +149,15 @@ body {
   padding: 16px 8px;
 }
 
+.info:after {
+  content: "";
+}
+
+.featuredItemBox > p {
+  margin: 0;
+  font-weight: bold;
+}
+
 .featuredItemBox > img {
   width: 80%;
   height: auto;
