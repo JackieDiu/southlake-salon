@@ -132,6 +132,12 @@ body {
 .featuresRow {
   display: flex;
   justify-content: center;
+  background-image: url("/images/tulips-transparent.png");
+  background-color: #f5f5f5;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 900px;
+  position: relative;
 }
 
 .featuredItemRow {
@@ -192,7 +198,7 @@ body {
   color: #fff;
   width: 400px;
   font-size: 14px;
-  border-radius: 15px;
+  border-radius: 10px;
   text-transform: uppercase;
 }
 
