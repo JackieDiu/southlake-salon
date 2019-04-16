@@ -21,12 +21,6 @@ h6 {
   margin: 1px;
 }
 
-h2 {
-  color: #79b0e7;
-  position: absolute;
-  top: 400px;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -76,7 +70,7 @@ body {
   color: #000;
   flex-direction: column;
   background-color: #2c3e50;
-  background-image: url("/images/shopBlue.jpg");
+  background-image: url("/images/shopFinal.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,14 +79,60 @@ body {
   padding: 32px;
 }
 
-.heroRow > .centerContainer > h1 {
-  text-transform: uppercase;
+.heroRow > .centerContainer > h2 {
+  width: 80%;
+  color: #ffffff;
+  position: absolute;
+  top: 465px;
 }
 
 .buttonRow {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+
+/* Featured section */
+.featuresRow {
+  display: flex;
+  justify-content: center;
+  background-image: url("/images/tulips-transparent.png");
+  background-color: #f5f5f5;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-size: 600px;
+  position: relative;
+}
+
+.featuredItemRow {
+  display: flex;
+  align-items: center;
+}
+
+.featuredItemBox {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 8px;
+}
+
+.info:after {
+  content: "";
+}
+
+.featuredItemBox > p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.featuredItemBox > img {
+  width: 80%;
+  height: auto;
 }
 
 /* Email row */
@@ -139,50 +179,7 @@ body {
   text-transform: uppercase;
 }
 
-/* Featured section */
-.featuresRow {
-  display: flex;
-  justify-content: center;
-  background-image: url("/images/tulips-transparent.png");
-  background-color: #f5f5f5;
-  background-position: left;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  background-size: 900px;
-  position: relative;
-}
-
-.featuredItemRow {
-  display: flex;
-  align-items: center;
-}
-
-.featuredItemBox {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 8px;
-}
-
-.info:after {
-  content: "";
-}
-
-.featuredItemBox > p {
-  margin: 0;
-  font-weight: bold;
-}
-
-.featuredItemBox > img {
-  width: 80%;
-  height: auto;
-}
-
-/* Premium section */
+/* Appointment section */
 .appointmentRow {
   text-transform: uppercase;
   display: flex;
@@ -247,7 +244,7 @@ body {
 }
 
 .socialRow > .centerContainer > ul > li {
-  background-color: #2c3e50;
+  background-color: #344c64;
   border-radius: 50%;
   text-align: center;
   padding: 14px;
@@ -262,8 +259,8 @@ p > a {
 
 .icon {
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 16px;
+  height: 16px;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
