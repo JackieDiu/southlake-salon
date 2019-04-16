@@ -21,6 +21,12 @@ h6 {
   margin: 1px;
 }
 
+h2 {
+  color: #79b0e7;
+  position: absolute;
+  top: 400px;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -66,10 +72,14 @@ body {
 .heroRow {
   font-size: 24px;
   display: flex;
-  height: 550px;
-  color: #fff;
+  height: 500px;
+  color: #000;
   flex-direction: column;
   background-color: #2c3e50;
+  background-image: url("/images/shopBlue.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   align-items: center;
   text-align: center;
   padding: 32px;
@@ -243,6 +253,11 @@ body {
   padding: 14px;
   fill: #fff;
   color: #fff;
+}
+
+p > a {
+  text-decoration: none;
+  color: #365e86;
 }
 
 .icon {
