@@ -118,40 +118,40 @@
         <!-- <button type="button" class="apptBtn">Make An Appointment</button> -->
 
         <div className="row">
-          <div className="col-md-4 mb-3 mb-md-0">
-            <div className="card py-4 h-100">
-              <div className="card-body text-center">
-                <i className="fas fa-map-marked-alt text-primary mb-2"></i>
-                <h4 className="text-uppercase m-0">Address</h4>
-                <hr className="my-4" />
-                <div className="small text-black-50">
-                  350 South Lake Ave., Pasadena CA
-                </div>
+          <div className="card">
+            <div className="card-body">
+              <svg class="icon icon-address-book">
+                <use xlink:href="#icon-address-book"></use>
+              </svg>
+              <h4 className="contact-text">Address</h4>
+              <hr className="my-4" />
+              <div className="small text-black-50">
+                350 South Lake Ave., Pasadena CA
               </div>
             </div>
           </div>
 
-          <div className="col-md-4 mb-3 mb-md-0">
-            <div className="card py-4 h-100">
-              <div className="card-body text-center">
-                <i className="fas fa-envelope text-primary mb-2"></i>
-                <h4 className="text-uppercase m-0">Email</h4>
-                <hr className="my-4" />
-                <div className="small text-black-50">
-                  <a href="#">hello@yourdomain.com</a>
-                </div>
+          <div className="card">
+            <div className="card-body">
+              <svg class="icon icon-envelop">
+                <use xlink:href="#icon-envelop"></use>
+              </svg>
+              <h4 className="contact-text">Email</h4>
+              <hr className="my-4" />
+              <div className="small text-black-50">
+                <a href="#">hello@yourdomain.com</a>
               </div>
             </div>
           </div>
 
-          <div className="col-md-4 mb-3 mb-md-0">
-            <div className="card py-4 h-100">
-              <div className="card-body text-center">
-                <i className="fas fa-mobile-alt text-primary mb-2"></i>
-                <h4 className="text-uppercase m-0">Phone</h4>
-                <hr className="my-4" />
-                <div className="small text-black-50">+1 (626) 577-9783</div>
-              </div>
+          <div className="card">
+            <div className="card-body">
+              <svg class="icon icon-mobile">
+                <use xlink:href="#icon-mobile"></use>
+              </svg>
+              <h4 className="contact-text">Phone</h4>
+              <hr className="my-4" />
+              <div className="small text-black-50">+1 (626) 577-9783</div>
             </div>
           </div>
         </div>
@@ -166,11 +166,6 @@
               <use xlink:href="#icon-yelp1"></use>
             </svg>
           </li>
-          <p>
-            <a href="mailto:tramstulips@yahoo.com" alt="email" class="email"
-              >tramstulips@yahoo.com</a
-            >
-          </p>
           <li>
             <svg class="icon icon-instagram1">
               <use xlink:href="#icon-instagram1"></use>
@@ -190,6 +185,30 @@
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
     >
+      <defs xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-mobile" viewBox="0 0 32 32">
+          <title>mobile</title>
+          <path
+            d="M23 0h-14c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM12 1.5h8v1h-8v-1zM16 30c-1.105 0-2-0.895-2-2s0.895-2 2-2 2 0.895 2 2-0.895 2-2 2zM24 24h-16v-20h16v20z"
+          />
+        </symbol>
+        <symbol id="icon-envelop" viewBox="0 0 32 32">
+          <title>envelop</title>
+          <path
+            d="M29 4h-26c-1.65 0-3 1.35-3 3v20c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-20c0-1.65-1.35-3-3-3zM12.461 17.199l-8.461 6.59v-15.676l8.461 9.086zM5.512 8h20.976l-10.488 7.875-10.488-7.875zM12.79 17.553l3.21 3.447 3.21-3.447 6.58 8.447h-19.579l6.58-8.447zM19.539 17.199l8.461-9.086v15.676l-8.461-6.59z"
+          />
+        </symbol>
+        <symbol id="icon-address-book" viewBox="0 0 32 32">
+          <title>address-book</title>
+          <path
+            d="M6 0v32h24v-32h-24zM18 8.010c2.203 0 3.99 1.786 3.99 3.99s-1.786 3.99-3.99 3.99-3.99-1.786-3.99-3.99 1.786-3.99 3.99-3.99v0zM24 24h-12v-2c0-2.209 1.791-4 4-4v0h4c2.209 0 4 1.791 4 4v2z"
+          />
+          <path d="M2 2h3v6h-3v-6z" />
+          <path d="M2 10h3v6h-3v-6z" />
+          <path d="M2 18h3v6h-3v-6z" />
+          <path d="M2 26h3v6h-3v-6z" />
+        </symbol>
+      </defs>
       <defs>
         <symbol
           xmlns="http://www.w3.org/2000/svg"
