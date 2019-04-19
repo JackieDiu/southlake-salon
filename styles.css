@@ -178,8 +178,8 @@ body {
   text-transform: uppercase;
 }
 
-/* Appointment section */
-.appointmentRow {
+/* Contact section */
+.contactSection {
   text-transform: uppercase;
   display: flex;
   color: #fff;
@@ -194,21 +194,14 @@ body {
   padding: 32px;
 }
 
-.appointmentRow > .centerContainer > h1 {
-  padding: 16px;
+.contactSection > .centerContainer {
+  display: flex;
+  height: 200px;
 }
 
-.apptBtn {
-  align-items: center;
-  padding: 12px;
-  font-weight: bold;
-  border: none;
-  background-color: #85a8ca;
-  color: #fff;
-  width: 400px;
-  font-size: 14px;
-  border-radius: 10px;
-  text-transform: uppercase;
+.contactSection > .centerContainer > .row {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Buttons */
@@ -254,4 +247,13 @@ body {
 p > a {
   text-decoration: none;
   color: #365e86;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
