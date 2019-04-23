@@ -64,11 +64,9 @@ body {
 /* Hero Row */
 
 .heroRow {
-  font-size: 26px;
   display: flex;
   position: relative;
-  height: 780px;
-  color: #000;
+  height: 735px;
   flex-direction: column;
   background-color: #5b93ca;
   background-image: url("/images/230956281-nail-polish-wallpaper.jpg");
@@ -77,15 +75,28 @@ body {
   background-size: cover;
   align-items: center;
   text-align: center;
-  text-shadow: 2px 2px 7px #111;
   padding: 32px;
 }
 
-.heroRow > .centerContainer > h2 {
+.heroRow > .centerContainer > h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 90px;
   width: 80%;
   color: #fff;
-  position: absolute;
-  top: 30px;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background: linear-gradient(rgb(158, 157, 157) 20%, transparent 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroRow > .centerContainer > h1:hover {
+  letter-spacing: 10px;
 }
 
 .buttonRow {
@@ -105,6 +116,19 @@ body {
   background-attachment: fixed;
   background-size: cover;
   position: relative;
+  text-align: center;
+  padding: 90px;
+}
+
+.featuresRow > .centerContainer > h1 {
+  font-size: 60px;
+}
+
+.featuresRow > .centerContainer > hr {
+  width: 150px;
+  border: 2px solid #f6d9eb;
+  background-color: #f6d9eb;
+  margin-bottom: 50px;
 }
 
 .featuredItemRow {
@@ -116,19 +140,21 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  text-align: center;
   justify-content: center;
   align-items: center;
   padding: 16px 8px;
 }
 
-.info:after {
-  content: "";
-}
-
 .featuredItemBox > p {
   margin: 0;
   font-weight: bold;
+}
+
+.featuredItemBox > hr {
+  width: 150px;
+  border: 2px solid #afd2f0;
+  background-color: #afd2f0;
+  margin-bottom: 50px;
 }
 
 .featuredItemBox > img {
@@ -138,7 +164,7 @@ body {
 
 /* Email row */
 
-.emailRow {
+.priceSection {
   display: flex;
   color: #fff;
   flex-direction: column;
@@ -152,11 +178,11 @@ body {
   padding: 32px;
 }
 
-.emailRow > .centerContainer > h1 {
+.priceSection > .centerContainer > h1 {
   padding: 16px;
 }
 
-.emailForm {
+/* .emailForm {
   display: flex;
   width: 100%;
   margin: 10px;
@@ -178,7 +204,7 @@ body {
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
-}
+} */
 
 /* Contact section */
 .contactSection {
