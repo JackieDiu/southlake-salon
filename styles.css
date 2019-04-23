@@ -66,7 +66,8 @@ body {
 .heroRow {
   font-size: 26px;
   display: flex;
-  height: 600px;
+  position: relative;
+  height: 785px;
   color: #000;
   flex-direction: column;
   background-color: #5b93ca;
@@ -84,7 +85,7 @@ body {
   width: 80%;
   color: #fff;
   position: absolute;
-  top: 500px;
+  top: 30px;
 }
 
 .buttonRow {
