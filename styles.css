@@ -37,7 +37,7 @@ body {
 /* Navigation row */
 .navRow {
   display: flex;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 #navLogo {
@@ -59,6 +59,12 @@ body {
 .navRow > ul > #navLogo {
   flex: 4;
   font-weight: bold;
+  color: rgb(58, 76, 98);
+}
+
+.navRow > ul > li > a {
+  text-decoration: none;
+  color: rgb(58, 76, 98);
 }
 
 /* Hero Row */
@@ -66,10 +72,10 @@ body {
 .heroRow {
   display: flex;
   position: relative;
-  height: 735px;
+  height: calc(100vh - 100px);
   flex-direction: column;
   background-color: #5b93ca;
-  background-image: url("/images/230956281-nail-polish-wallpaper.jpg");
+  background-image: url("/images/20190422_121631\ \(1\).jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,24 +84,24 @@ body {
   padding: 32px;
 }
 
-.heroRow > .centerContainer > .main-text {
+.heroRow > .centerContainer > h1 {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
-  font-size: 70px;
-  width: 80%;
+  font-size: 80px;
+  width: 100%;
   color: #fff;
   transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
   text-transform: uppercase;
   transition: 0.5s;
-  background: linear-gradient(rgb(150, 143, 143) 20%, transparent 110%);
+  background: linear-gradient(rgb(58, 76, 98) 20%, transparent 110%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.heroRow > .centerContainer > .main-text:hover {
+.heroRow > .centerContainer > h1:hover {
   letter-spacing: 10px;
 }
 
