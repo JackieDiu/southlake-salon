@@ -139,15 +139,6 @@ body {
   animation: move 1000ms infinite alternate;
 }
 
-@keyframes move {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(10px);
-  }
-}
-
 .aboutItemSection {
   display: flex;
   align-items: center;
@@ -191,8 +182,41 @@ body {
   padding: 32px;
 }
 
+.serviceSection > .centerContainer {
+  width: 80%;
+}
+
 .serviceSection > .centerContainer > h1 {
-  padding: 16px;
+  font-size: 60px;
+  color: #111;
+  border: 3px dotted #04090e;
+}
+
+.serviceSection > .centerContainer > hr {
+  width: 150px;
+  border: 2px solid #f6d9eb;
+  background-color: #f6d9eb;
+  margin-bottom: 50px;
+  animation: move 1000ms infinite alternate;
+}
+
+.serviceSection > .centerContainer > .priceList {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  border: 3px solid #fff;
+}
+
+.row > .pricing-box {
+  list-style: none;
+  border: 3px solid #111;
+}
+
+.row > .pricing-box > ul > li {
+  display: flex;
+  border: 3px dotted #f5c894;
 }
 
 /* Contact section */
@@ -271,4 +295,13 @@ p > a {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
