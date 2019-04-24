@@ -75,7 +75,7 @@ body {
   height: calc(100vh - 100px);
   flex-direction: column;
   background-color: #5b93ca;
-  background-image: url("/images/20190422_121631\ \(1\).jpg");
+  background-image: url("/images/shop.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -102,14 +102,14 @@ body {
 }
 
 .heroRow > .centerContainer > h1:hover {
-  letter-spacing: 10px;
+  letter-spacing: 12px;
 }
 
-.buttonRow {
+/* .buttonRow {
   display: flex;
   justify-content: space-around;
   width: 100%;
-}
+} */
 
 /* Featured section */
 .featuresRow {
@@ -135,6 +135,7 @@ body {
   border: 2px solid #f6d9eb;
   background-color: #f6d9eb;
   margin-bottom: 50px;
+  animation: move 1s infinite alternate;
 }
 
 .featuredItemRow {
@@ -158,14 +159,24 @@ body {
 
 .featuredItemBox > hr {
   width: 100px;
-  border: 2px solid #afd2f0;
-  background-color: #afd2f0;
+  border: 2px solid #f6d9eb;
+  background-color: #f6d9eb;
   margin-bottom: 50px;
+  animation: move 1s infinite alternate;
 }
 
 .featuredItemBox > img {
   width: 80%;
   height: auto;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
 
 /* Email row */
