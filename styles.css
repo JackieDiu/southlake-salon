@@ -34,7 +34,7 @@ body {
   align-items: center;
 }
 
-/* Navigation row */
+/* Navigation Section */
 .navRow {
   display: flex;
   font-size: 20px;
@@ -44,32 +44,32 @@ body {
   font-size: 32px;
 }
 
-.navRow > ul {
+.navSection > ul {
   display: flex;
   width: 100%;
   list-style: none;
   justify-content: space-around;
 }
 
-.navRow > ul > li {
+.navSection > ul > li {
   flex: 1;
   padding: 16px;
 }
 
-.navRow > ul > #navLogo {
+.navSection > ul > #navLogo {
   flex: 4;
   font-weight: bold;
   color: rgb(58, 76, 98);
 }
 
-.navRow > ul > li > a {
+.navSection > ul > li > a {
   text-decoration: none;
   color: rgb(58, 76, 98);
 }
 
-/* Hero Row */
+/* Hero Section */
 
-.heroRow {
+.heroSection {
   display: flex;
   position: relative;
   height: calc(100vh - 100px);
@@ -84,7 +84,7 @@ body {
   padding: 32px;
 }
 
-.heroRow > .centerContainer > h1 {
+.heroSection > .centerContainer > h1 {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -101,18 +101,12 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.heroRow > .centerContainer > h1:hover {
+.heroSection > .centerContainer > h1:hover {
   letter-spacing: 12px;
 }
 
-/* .buttonRow {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-} */
-
-/* Featured section */
-.featuresRow {
+/* About Section */
+.aboutSection {
   display: flex;
   justify-content: center;
   background-image: url("/images/88847-pastelBG.jpg");
@@ -126,48 +120,23 @@ body {
   padding: 90px;
 }
 
-.featuresRow > .centerContainer > h1 {
+.aboutSection > .centerContainer > h1 {
   font-size: 60px;
+  color: #111;
 }
 
-.featuresRow > .centerContainer > hr {
+.aboutSection > .centerContainer > h2 {
+  padding-bottom: 20px;
+  color: #111;
+  text-shadow: 2px 2px 10px #bcd6f0;
+}
+
+.aboutSection > .centerContainer > hr {
   width: 150px;
   border: 2px solid #f6d9eb;
   background-color: #f6d9eb;
   margin-bottom: 50px;
-  animation: move 1s infinite alternate;
-}
-
-.featuredItemRow {
-  display: flex;
-  align-items: center;
-}
-
-.featuredItemBox {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 8px;
-}
-
-.featuredItemBox > p {
-  margin: 0;
-  font-weight: bold;
-}
-
-.featuredItemBox > hr {
-  width: 100px;
-  border: 2px solid #f6d9eb;
-  background-color: #f6d9eb;
-  margin-bottom: 50px;
-  animation: move 1s infinite alternate;
-}
-
-.featuredItemBox > img {
-  width: 80%;
-  height: auto;
+  animation: move 1000ms infinite alternate;
 }
 
 @keyframes move {
@@ -179,49 +148,52 @@ body {
   }
 }
 
-/* Email row */
+.aboutItemSection {
+  display: flex;
+  align-items: center;
+}
 
-.priceSection {
+.aboutItemBox {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 8px;
+}
+
+.aboutItemBox > p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.aboutItemBox > hr {
+  width: 100px;
+  border: 2px solid #f6d9eb;
+  background-color: #f6d9eb;
+  margin-bottom: 50px;
+}
+
+.aboutItemBox > img {
+  width: 80%;
+  height: auto;
+}
+
+/* Service Section */
+
+.serviceSection {
   display: flex;
   color: #fff;
   flex-direction: column;
   background-color: #8fbeee;
-  background-image: url("/images/inside.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   align-items: center;
   text-align: center;
   padding: 32px;
 }
 
-.priceSection > .centerContainer > h1 {
+.serviceSection > .centerContainer > h1 {
   padding: 16px;
 }
-
-/* .emailForm {
-  display: flex;
-  width: 100%;
-  margin: 10px;
-}
-
-.emailForm > input[type="text"] {
-  flex: 8;
-  border: none;
-  padding: 14px;
-  text-align: center;
-}
-
-.emailForm > button {
-  flex: 1;
-  padding: 14px;
-  font-weight: bold;
-  border: none;
-  background-color: #f5c894;
-  color: #fff;
-  font-size: 14px;
-  text-transform: uppercase;
-} */
 
 /* Contact section */
 .contactSection {
@@ -246,17 +218,6 @@ body {
   overflow: hidden;
   border-radius: 10px;
 }
-
-/* .contactSection > .cardBox > .icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #f00;
-  transition: 0.5s;
-  z-index: 1;
-} */
 
 /* Buttons */
 .btn {
