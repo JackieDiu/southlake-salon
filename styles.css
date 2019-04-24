@@ -78,11 +78,11 @@ body {
   padding: 32px;
 }
 
-.heroRow > .centerContainer > h1 {
+.heroRow > .centerContainer > .main-text {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 90px;
+  font-size: 70px;
   width: 80%;
   color: #fff;
   transform: translate(-50%, -50%);
@@ -90,12 +90,12 @@ body {
   padding: 0;
   text-transform: uppercase;
   transition: 0.5s;
-  background: linear-gradient(rgb(158, 157, 157) 20%, transparent 90%);
+  background: linear-gradient(rgb(150, 143, 143) 20%, transparent 110%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.heroRow > .centerContainer > h1:hover {
+.heroRow > .centerContainer > .main-text:hover {
   letter-spacing: 10px;
 }
 
@@ -151,7 +151,7 @@ body {
 }
 
 .featuredItemBox > hr {
-  width: 150px;
+  width: 100px;
   border: 2px solid #afd2f0;
   background-color: #afd2f0;
   margin-bottom: 50px;
