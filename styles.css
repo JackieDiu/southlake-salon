@@ -205,18 +205,18 @@ body {
 .serviceSection > .centerContainer > .priceList {
   width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   text-transform: uppercase;
   border: 3px solid #fff;
 }
 
-/* .row {
-} */
-
 .priceList > .service-box {
   list-style: none;
+  text-align: center;
   border: 3px solid #111;
+}
+
+.priceList > .box-left {
 }
 
 .priceList > .service-box > h2 {
@@ -232,9 +232,17 @@ body {
   margin-bottom: 40px;
 }
 
+.priceList > .service-box > .list {
+  width: 80%;
+}
+
 .priceList > .service-box > ul > li {
   display: flex;
+  margin: 5px;
   border: 3px dotted #f5c894;
+}
+
+.service-box > ul > li > h4 {
 }
 
 /* Contact section */
