@@ -186,7 +186,7 @@ body {
 }
 
 .serviceSection > .centerContainer {
-  width: 90%;
+  width: 80%;
 }
 
 .serviceSection > .centerContainer > h1 {
@@ -203,23 +203,36 @@ body {
 }
 
 .serviceSection > .centerContainer > .priceList {
-  text-transform: uppercase;
   width: 100%;
-  border: 3px solid #fff;
-}
-
-.row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-transform: uppercase;
+  border: 3px solid #fff;
 }
 
-.row > .pricing-box {
+/* .row {
+} */
+
+.priceList > .service-box {
   list-style: none;
   border: 3px solid #111;
 }
 
-.row > .pricing-box > ul > li {
+.priceList > .service-box > h2 {
+  font-size: 30px;
+  color: rgb(58, 76, 98);
+  margin-top: 20px;
+}
+
+.priceList > .service-box > hr {
+  width: 45px;
+  border: 2px solid #e5f6fd;
+  background-color: #e5f6fd;
+  margin-bottom: 40px;
+}
+
+.priceList > .service-box > ul > li {
   display: flex;
   border: 3px dotted #f5c894;
 }
