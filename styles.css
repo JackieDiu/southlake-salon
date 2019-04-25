@@ -28,7 +28,6 @@ body {
 }
 
 .centerContainer {
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,7 +83,7 @@ body {
   padding: 32px;
 }
 
-.heroSection > .centerContainer > h1 {
+.heroSection > h1 {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -120,9 +119,13 @@ body {
   padding: 90px;
 }
 
+.aboutSection > .centerContainer {
+  width: 50%;
+}
+
 .aboutSection > .centerContainer > h1 {
   font-size: 60px;
-  color: #111;
+  color: rgb(58, 76, 98);
 }
 
 .aboutSection > .centerContainer > h2 {
@@ -174,8 +177,8 @@ body {
 
 .serviceSection {
   display: flex;
-  color: #fff;
   flex-direction: column;
+  color: #fff;
   background-color: #8fbeee;
   align-items: center;
   text-align: center;
@@ -183,30 +186,32 @@ body {
 }
 
 .serviceSection > .centerContainer {
-  width: 80%;
+  width: 90%;
 }
 
 .serviceSection > .centerContainer > h1 {
   font-size: 60px;
-  color: #111;
-  border: 3px dotted #04090e;
+  color: rgb(58, 76, 98);
 }
 
 .serviceSection > .centerContainer > hr {
   width: 150px;
-  border: 2px solid #f6d9eb;
-  background-color: #f6d9eb;
+  border: 2px solid #e5f6fd;
+  background-color: #e5f6fd;
   margin-bottom: 50px;
   animation: move 1000ms infinite alternate;
 }
 
 .serviceSection > .centerContainer > .priceList {
   text-transform: uppercase;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   width: 100%;
   border: 3px solid #fff;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .row > .pricing-box {
