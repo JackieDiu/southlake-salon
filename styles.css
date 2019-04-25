@@ -10,6 +10,7 @@ ul,
 li {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 h1,
@@ -46,7 +47,6 @@ body {
 .navSection > ul {
   display: flex;
   width: 100%;
-  list-style: none;
   justify-content: space-around;
 }
 
@@ -186,7 +186,7 @@ body {
 }
 
 .serviceSection > .centerContainer {
-  width: 80%;
+  width: 60%;
 }
 
 .serviceSection > .centerContainer > h1 {
@@ -205,18 +205,27 @@ body {
 .serviceSection > .centerContainer > .priceList {
   width: 100%;
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   text-transform: uppercase;
   border: 3px solid #fff;
 }
 
 .priceList > .service-box {
-  list-style: none;
   text-align: center;
   border: 3px solid #111;
 }
 
 .priceList > .box-left {
+  flex: 1;
+}
+
+.priceList > .image-box {
+  flex: 2;
+}
+
+.priceList > .box-right {
+  flex: 1;
 }
 
 .priceList > .service-box > h2 {
@@ -237,7 +246,6 @@ body {
 }
 
 .priceList > .service-box > ul > li {
-  display: flex;
   margin: 5px;
   border: 3px dotted #f5c894;
 }
@@ -297,7 +305,6 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  list-style: none;
 }
 
 .socialRow > .centerContainer > ul > li {
