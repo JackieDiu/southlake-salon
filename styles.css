@@ -100,7 +100,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.heroSection > .centerContainer > h1:hover {
+.heroSection > h1:hover {
   letter-spacing: 12px;
 }
 
@@ -258,18 +258,19 @@ body {
   text-transform: uppercase;
   display: flex;
   width: 1200px;
-  height: 200px;
+  height: 300px;
   margin: 20px auto;
   color: #000;
   padding: 32px;
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  border: 2px solid #344c64;
 }
 
 .contactSection > .cardBox {
   width: calc(400px - 20px);
-  height: calc(300px - 20px);
+  height: calc(250px - 20px);
   float: left;
   margin: 15px;
   overflow: hidden;
@@ -285,6 +286,13 @@ body {
 
 .box3 {
   flex: 1;
+}
+
+hr {
+  width: 45px;
+  border: 2px solid #3a464b;
+  background-color: #3a464b;
+  margin-bottom: 10px;
 }
 
 .cardBox > ul > li > h4 {
