@@ -268,29 +268,33 @@ body {
 }
 
 .contactSection > .cardBox {
-  /* position: relative; */
   width: calc(400px - 20px);
   height: calc(300px - 20px);
   float: left;
   margin: 15px;
   overflow: hidden;
-  border-radius: 10px;
 }
 
-/* Buttons */
-.btn {
-  padding: 14px;
-  font-weight: bold;
-  border: none;
-  background-color: #85a8ca;
-  color: #fff;
-  width: 192px;
-  font-size: 14px;
-  text-transform: uppercase;
+.box1 {
+  flex: 1;
 }
 
-.btnPro {
-  background-color: #f5c894;
+.box2 {
+  flex: 2;
+}
+
+.box3 {
+  flex: 1;
+}
+
+.cardBox > ul > li > h4 {
+  font-weight: bolder;
+}
+
+.cardBox > ul > li > p {
+  font-size: 10px;
+  margin: 5px;
+  padding: 3px;
 }
 
 /* Icon Footer */
