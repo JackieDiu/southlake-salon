@@ -211,6 +211,10 @@ body {
   border: 3px solid #fff;
 }
 
+.priceList > .image-box > img {
+  width: 200px;
+}
+
 .priceList > .service-box {
   text-align: center;
   border: 3px solid #111;
@@ -232,6 +236,7 @@ body {
   font-size: 30px;
   color: rgb(58, 76, 98);
   margin-top: 20px;
+  text-align: center;
 }
 
 .priceList > .service-box > hr {
@@ -242,15 +247,18 @@ body {
 }
 
 .priceList > .service-box > .list {
-  width: 80%;
+  width: 90%;
 }
 
 .priceList > .service-box > ul > li {
+  float: left;
+  width: 45%;
   margin: 5px;
   border: 3px dotted #f5c894;
 }
 
 .service-box > ul > li > h4 {
+  float: left;
 }
 
 /* Contact section */
