@@ -250,17 +250,21 @@ body {
 }
 
 .service-box > ul > li > h4 {
-  float: left;
+  font-weight: bolder;
+}
+
+.service-box > ul > li > p {
+  font-size: 10px;
+  margin: 5px;
+  padding: 3px;
 }
 
 /* Contact section */
 .contactSection {
   text-transform: uppercase;
   display: flex;
-  width: 1200px;
-  height: 300px;
   margin: 20px auto;
-  color: #000;
+  color: #344c64;
   padding: 32px;
   justify-content: space-around;
   align-items: center;
@@ -268,12 +272,20 @@ body {
   border: 2px solid #344c64;
 }
 
-.contactSection > .cardBox {
-  width: calc(400px - 20px);
-  height: calc(250px - 20px);
-  float: left;
-  margin: 15px;
-  overflow: hidden;
+.contactSection > .centerContainer {
+  width: 100%;
+  border: 2px dotted #344c64;
+}
+
+.contactSection > .centerContainer > .cardContainer {
+  display: flex;
+  margin: 20px;
+}
+
+.cardBox {
+  width: calc(400px - 50px);
+  border: 2px dotted #344c64;
+  padding: 20px;
 }
 
 .box1 {
@@ -281,7 +293,7 @@ body {
 }
 
 .box2 {
-  flex: 2;
+  flex: 1;
 }
 
 .box3 {
@@ -290,8 +302,8 @@ body {
 
 hr {
   width: 45px;
-  border: 2px solid #3a464b;
-  background-color: #3a464b;
+  border: 2px solid #2a799b;
+  background-color: #2a799b;
   margin-bottom: 10px;
 }
 
@@ -308,29 +320,13 @@ hr {
 /* Icon Footer */
 
 .socialRow {
-  display: flex;
-  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 20px;
 }
 
 .socialRow > .centerContainer > ul {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.socialRow > .centerContainer > ul > li {
-  background-color: #344c64;
-  border-radius: 50%;
-  text-align: center;
-  padding: 14px;
-  fill: #fff;
-  color: #fff;
-}
-
-p > a {
-  text-decoration: none;
-  color: #365e86;
 }
 
 .icon {
