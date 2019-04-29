@@ -28,20 +28,10 @@ body {
   font-family: "Montserrat", "sans-serif";
 }
 
-.centerContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 /* Navigation Section */
 .navRow {
   display: flex;
   font-size: 20px;
-}
-
-#navLogo {
-  font-size: 32px;
 }
 
 .navSection > ul {
@@ -52,17 +42,21 @@ body {
 
 .navSection > ul > li {
   flex: 1;
-  padding: 16px;
+  line-height: 35px;
+  font-weight: bold;
+  padding: 12px;
 }
 
 .navSection > ul > #navLogo {
-  flex: 4;
+  font-size: 26px;
+  flex: 5;
   font-weight: bold;
   color: rgb(58, 76, 98);
 }
 
 .navSection > ul > li > a {
   text-decoration: none;
+  font-size: 16px;
   color: rgb(58, 76, 98);
 }
 
@@ -71,7 +65,7 @@ body {
 .heroSection {
   display: flex;
   position: relative;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 80px);
   flex-direction: column;
   background-color: #5b93ca;
   background-image: url("/images/shop.jpg");
@@ -116,11 +110,11 @@ body {
   background-size: cover;
   position: relative;
   text-align: center;
-  padding: 90px;
+  padding: 60px;
 }
 
 .aboutSection > .centerContainer {
-  width: 50%;
+  width: 60%;
 }
 
 .aboutSection > .centerContainer > h1 {
@@ -148,8 +142,6 @@ body {
 }
 
 .aboutItemBox {
-  display: flex;
-  flex-direction: column;
   flex: 1;
   justify-content: center;
   align-items: center;
@@ -186,7 +178,7 @@ body {
 }
 
 .serviceSection > .centerContainer {
-  width: 60%;
+  width: 80%;
 }
 
 .serviceSection > .centerContainer > h1 {
@@ -212,7 +204,7 @@ body {
 }
 
 .priceList > .image-box > img {
-  width: 200px;
+  width: 350px;
 }
 
 .priceList > .service-box {
