@@ -31,6 +31,7 @@ body {
 }
 
 /* Navigation Section */
+
 .navRow {
   display: flex;
   font-size: 20px;
@@ -99,6 +100,7 @@ body {
 }
 
 /* About Section */
+
 .aboutSection {
   display: flex;
   justify-content: center;
@@ -154,6 +156,7 @@ body {
 .aboutItemBox > p {
   margin: 0;
   font-weight: bold;
+  font-size: 20px;
 }
 
 blockquote {
@@ -180,7 +183,7 @@ blockquote {
   flex-direction: column;
   color: #fff;
   background-color: #8fbeee;
-  background-image: url("/images/d18bcf9e5f69c7fc5a78e0e9bae3676f.png");
+  background-image: url("/images/1125632.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -209,61 +212,47 @@ blockquote {
 .serviceSection > .centerContainer > h3 {
   text-transform: uppercase;
   text-shadow: 2px 2px 10px #bcd6f0;
-  margin: 30px;
+  margin: 20px;
 }
 
 .serviceSection > .centerContainer > .priceList {
-  width: 100%;
+  width: calc(80% - 5%);
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  margin: 0 70px;
   text-transform: uppercase;
-  border: 3px solid #fff;
+  border: 5px solid #e5f6fd;
+}
+
+.serviceSection > .centerContainer > .priceList > div {
+  margin: 10px;
+}
+
+.image-box {
+  flex: 1;
+}
+
+.service-box {
+  flex: 2;
 }
 
 .priceList > .image-box > img {
-  width: 350px;
+  width: 310px;
 }
 
 .priceList > .service-box {
   text-align: center;
-  border: 3px solid #111;
+  border: 2px solid #2a799b;
 }
 
-.priceList > .box-left {
-  flex: 1;
+.priceList > .left > ul > li {
+  text-align: left;
+  padding: 10px 20px;
 }
 
-.priceList > .image-box {
-  flex: 2;
-}
-
-.priceList > .box-right {
-  flex: 1;
-}
-
-.priceList > .service-box > h2 {
-  font-size: 30px;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.priceList > .service-box > hr {
-  width: 45px;
-  border: 2px solid #e5f6fd;
-  background-color: #e5f6fd;
-  margin-bottom: 40px;
-}
-
-.priceList > .service-box > .list {
-  width: 90%;
-}
-
-.priceList > .service-box > ul > li {
-  float: left;
-  width: 45%;
-  margin: 5px;
-  border: 3px dotted #f5c894;
+.priceList > .right > ul > li {
+  text-align: left;
+  padding: 10px 20px;
+  color: #fff;
 }
 
 .service-box > ul > li > h4 {
@@ -272,11 +261,11 @@ blockquote {
 
 .service-box > ul > li > p {
   font-size: 10px;
-  margin: 5px;
-  padding: 3px;
+  margin: 0px;
+  padding: 0px;
 }
-
 /* Contact section */
+
 .contactSection {
   margin: 20px auto;
   color: #344c64;
