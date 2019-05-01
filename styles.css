@@ -120,6 +120,7 @@ body {
 
 .aboutSection > .centerContainer > h1 {
   font-size: 50px;
+  text-shadow: 2px 2px 2px #344c644b;
 }
 
 .aboutSection > .centerContainer > hr {
@@ -128,6 +129,7 @@ body {
   background-color: #f6d9eb;
   margin-bottom: 40px;
   animation: move 1000ms infinite alternate;
+  box-shadow: 2px 2px 1px 0px rgba(84, 85, 84, 0.19);
 }
 
 .aboutSection > .centerContainer > h2 {
@@ -153,6 +155,10 @@ body {
   padding: 16px 8px;
 }
 
+img.img-box {
+  box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 3, 0, 0.19);
+}
+
 .aboutItemBox > p {
   margin: 0;
   font-weight: bold;
@@ -169,6 +175,7 @@ blockquote {
   border: 2px solid #f6d9eb;
   background-color: #f6d9eb;
   margin-bottom: 40px;
+  box-shadow: 2px 2px 1px 0px rgba(84, 85, 84, 0.19);
 }
 
 .aboutItemBox > img {
@@ -189,7 +196,7 @@ blockquote {
   background-size: cover;
   align-items: center;
   text-align: center;
-  padding: 32px;
+  padding: 40px;
 }
 
 .serviceSection > .centerContainer {
@@ -199,6 +206,7 @@ blockquote {
 .serviceSection > .centerContainer > h1 {
   font-size: 50px;
   color: rgb(58, 76, 98);
+  text-shadow: 2px 2px 2px #344c644b;
 }
 
 .serviceSection > .centerContainer > hr {
@@ -207,6 +215,7 @@ blockquote {
   background-color: #e5f6fd;
   margin-bottom: 40px;
   animation: move 1000ms infinite alternate;
+  box-shadow: 2px 2px 1px 0px rgba(84, 85, 84, 0.19);
 }
 
 .serviceSection > .centerContainer > h3 {
@@ -218,9 +227,11 @@ blockquote {
 .serviceSection > .centerContainer > .priceList {
   width: calc(80% - 5%);
   display: flex;
-  margin: 0 70px;
+  flex-direction: row;
+  margin: 0 auto;
   text-transform: uppercase;
-  border: 5px solid #e5f6fd;
+  border: 5px solid #e5f6fd65;
+  box-shadow: 0 2px 4px 0 rgba(1, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 3, 0, 0.19);
 }
 
 .serviceSection > .centerContainer > .priceList > div {
@@ -232,11 +243,13 @@ blockquote {
 }
 
 .service-box {
-  flex: 2;
+  flex: 1;
+  box-shadow: 0 2px 4px 0 rgba(1, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 3, 0, 0.19);
 }
 
 .priceList > .image-box > img {
   width: 310px;
+  box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 3, 0, 0.19);
 }
 
 .priceList > .service-box {
@@ -244,32 +257,24 @@ blockquote {
   border: 2px solid #2a799b;
 }
 
-.priceList > .left > ul > li {
+.priceList > .service-box > ul > li {
   text-align: left;
   padding: 10px 20px;
-}
-
-.priceList > .right > ul > li {
-  text-align: left;
-  padding: 10px 20px;
-  color: #fff;
-}
-
-.service-box > ul > li > h4 {
-  font-weight: bolder;
 }
 
 .service-box > ul > li > p {
+  color: #fdd7c7;
   font-size: 10px;
   margin: 0px;
   padding: 0px;
+  text-shadow: 2px 2px 7px #7c716b80;
 }
 /* Contact section */
 
 .contactSection {
   margin: 20px auto;
   color: #344c64;
-  padding: 32px;
+  padding-top: 32px;
   text-align: center;
 }
 
@@ -287,6 +292,7 @@ blockquote {
   background-color: #2a799b;
   margin-bottom: 40px;
   animation: move 1000ms infinite alternate;
+  box-shadow: 2px 2px 1px 0px rgba(84, 85, 84, 0.19);
 }
 
 .centerContainer > .contact-text > h3 {
@@ -305,7 +311,7 @@ blockquote {
   border: 2px solid #344c64;
   border-radius: 10px;
   padding: 30px;
-  margin: 0 30px;
+  margin: 0 20px;
 }
 
 .box1 {
