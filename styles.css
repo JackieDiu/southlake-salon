@@ -30,6 +30,15 @@ body {
   font-family: "Montserrat", "sans-serif";
 }
 
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
 /* Navigation Section */
 
 .navRow {
@@ -267,7 +276,7 @@ blockquote {
   font-size: 10px;
   margin: 0px;
   padding: 0px;
-  text-shadow: 2px 2px 7px #7c716b80;
+  text-shadow: 0px 0px 7px #7c716b80;
 }
 /* Contact section */
 
@@ -359,13 +368,4 @@ hr {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
-}
-
-@keyframes move {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(10px);
-  }
 }
