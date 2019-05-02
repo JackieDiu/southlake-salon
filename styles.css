@@ -39,6 +39,15 @@ body {
   }
 }
 
+@keyframes heroText {
+  0% {
+    top: 600px;
+  }
+  100% {
+    top: 200px;
+  }
+}
+
 /* Navigation Section */
 
 .navRow {
@@ -102,6 +111,7 @@ body {
   background: linear-gradient(rgb(58, 76, 98) 20%, transparent 110%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: heroText 2s forwards;
 }
 
 .heroSection > h1:hover {
