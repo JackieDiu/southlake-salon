@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Kalam|Montserrat");
 * {
   box-sizing: border-box;
 }
@@ -27,24 +27,6 @@ body {
   flex-direction: column;
   color: rgb(58, 76, 98);
   font-family: "Montserrat", "sans-serif";
-}
-
-@keyframes move {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(10px);
-  }
-}
-
-@keyframes hero-textr {
-  0% {
-    top: 600px;
-  }
-  100% {
-    top: 200px;
-  }
 }
 
 /* Navigation Section */
@@ -103,27 +85,30 @@ body {
 
 .text-animation {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 50%;
-  font-size: 80px;
   width: 100%;
   transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  transition: 0.5s;
-  background: linear-gradient(rgb(58, 76, 98) 20%, transparent 110%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* animation: hero-text 3s forwards; */
 }
 
 .text-animation > li {
   display: inline-block;
-  /* margin-right: 5px; */
+  font-size: 90px;
+  margin-right: 5px;
+  font-weight: 1000;
   color: #135b80;
   opacity: 1;
   transition: all 2.5s ease;
+  background: linear-gradient(rgb(58, 76, 98) 20%, transparent 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-animation > .spaces {
+  margin: 15px;
 }
 
 .text-animation > li:last-child {
@@ -131,7 +116,7 @@ body {
 }
 
 .text-animation.hidden {
-  opacity: 0;
+  opacity: 1;
 }
 
 .text-animation.hidden li:nth-child(1) {
@@ -207,9 +192,17 @@ body {
   transform: translate(30px, 200px);
 }
 
-/* .heroSection > .heroText li:hover {
-  letter-spacing: 12px;
-} */
+div > span {
+  font-family: "Kalam", cursive;
+  text-transform: uppercase;
+  color: #e27e7e;
+  font-size: 40px;
+  font-weight: 400;
+  text-shadow: 2px 2px 5px #995555;
+  letter-spacing: 5px;
+  position: relative;
+  top: 230px;
+}
 
 /* About Section */
 
@@ -242,6 +235,15 @@ body {
   margin-bottom: 40px;
   animation: move 1000ms infinite alternate;
   box-shadow: 2px 2px 1px 0px rgba(84, 85, 84, 0.19);
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
 
 .aboutSection > .centerContainer > h2 {
@@ -377,10 +379,11 @@ blockquote {
 .service-box > ul > li > p {
   color: #ff7777;
   font-size: 16px;
+  letter-spacing: 1px;
   margin: 0px;
   padding: 0px;
   /* text-shadow: 0px 0px 1px #000000; */
-  text-shadow: -1px 0 #9b4949, 0 1px #9b4949, 1px 0 #9b4949, 0 -1px #9b4949;
+  text-shadow: -1px 0 #995555, 0 1px #995555, 1px 0 #995555, 0 -1px #995555;
 }
 /* Contact section */
 
@@ -453,17 +456,7 @@ hr {
   padding: 3px;
 }
 
-/* Icon Footer */
-
-.socialRow {
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-}
-
-.socialRow > .centerContainer > ul {
-  width: 100%;
-}
+/* Icon */
 
 .icon {
   display: inline-block;
@@ -472,4 +465,13 @@ hr {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+}
+
+/* Footer Social Section */
+
+.socialSection {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
 }
