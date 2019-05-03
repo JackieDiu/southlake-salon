@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-
 * {
   box-sizing: border-box;
 }
@@ -39,7 +38,7 @@ body {
   }
 }
 
-@keyframes heroText {
+@keyframes hero-textr {
   0% {
     top: 600px;
   }
@@ -50,7 +49,7 @@ body {
 
 /* Navigation Section */
 
-.navRow {
+.navSection {
   display: flex;
   font-size: 20px;
 }
@@ -66,6 +65,11 @@ body {
   line-height: 35px;
   font-weight: bold;
   padding: 12px;
+}
+
+.navSection > ul > li > img {
+  width: 7%;
+  margin: -10px -5px -10px 20px;
 }
 
 .navSection > ul > #navLogo {
@@ -97,7 +101,7 @@ body {
   padding: 32px;
 }
 
-.heroSection > h1 {
+.text-animation {
   position: absolute;
   top: 30%;
   left: 50%;
@@ -111,12 +115,101 @@ body {
   background: linear-gradient(rgb(58, 76, 98) 20%, transparent 110%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: heroText 3s forwards;
+  /* animation: hero-text 3s forwards; */
 }
 
-.heroSection > h1:hover {
-  letter-spacing: 12px;
+.text-animation > li {
+  display: inline-block;
+  /* margin-right: 5px; */
+  color: #135b80;
+  opacity: 1;
+  transition: all 2.5s ease;
 }
+
+.text-animation > li:last-child {
+  margin-right: 0;
+}
+
+.text-animation.hidden {
+  opacity: 0;
+}
+
+.text-animation.hidden li:nth-child(1) {
+  transform: translate(-200px, -200px);
+}
+.text-animation.hidden li:nth-child(1) {
+  transform: translate(20px, 100px);
+}
+.text-animation.hidden li:nth-child(1) {
+  transform: translate(-150px, -80px);
+}
+.text-animation.hidden li:nth-child(2) {
+  transform: translate(10px, -200px);
+}
+.text-animation.hidden li:nth-child(3) {
+  transform: translate(-300px, 200px);
+}
+.text-animation.hidden li:nth-child(4) {
+  transform: translate(20px, -20px);
+}
+.text-animation.hidden li:nth-child(5) {
+  transform: translate(30px, 200px);
+}
+.text-animation.hidden li:nth-child(6) {
+  transform: translate(-200px, -100px);
+}
+.text-animation.hidden li:nth-child(7) {
+  transform: translate(-200px, -200px);
+}
+.text-animation.hidden li:nth-child(8) {
+  transform: translate(20px, 100px);
+}
+.text-animation.hidden li:nth-child(9) {
+  transform: translate(-150px, -80px);
+}
+.text-animation.hidden li:nth-child(10) {
+  transform: translate(10px, -200px);
+}
+.text-animation.hidden li:nth-child(11) {
+  transform: translate(-300px, 200px);
+}
+.text-animation.hidden li:nth-child(12) {
+  transform: translate(20px, -20px);
+}
+.text-animation.hidden li:nth-child(13) {
+  transform: translate(30px, 200px);
+}
+.text-animation.hidden li:nth-child(14) {
+  transform: translate(-200px, -100px);
+}
+.text-animation.hidden li:nth-child(15) {
+  transform: translate(-200px, -200px);
+}
+.text-animation.hidden li:nth-child(16) {
+  transform: translate(20px, 100px);
+}
+.text-animation.hidden li:nth-child(17) {
+  transform: translate(20px, 100px);
+}
+.text-animation.hidden li:nth-child(18) {
+  transform: translate(-150px, -80px);
+}
+.text-animation.hidden li:nth-child(19) {
+  transform: translate(10px, -200px);
+}
+.text-animation.hidden li:nth-child(20) {
+  transform: translate(-300px, 200px);
+}
+.text-animation.hidden li:nth-child(21) {
+  transform: translate(20px, -20px);
+}
+.text-animation.hidden li:nth-child(22) {
+  transform: translate(30px, 200px);
+}
+
+/* .heroSection > .heroText li:hover {
+  letter-spacing: 12px;
+} */
 
 /* About Section */
 
