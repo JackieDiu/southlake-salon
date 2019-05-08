@@ -55,15 +55,27 @@ body {
 }
 
 .navSection > ul > #navLogo {
-  font-size: 30px;
+  text-transform: uppercase;
+  font-size: 25px;
   flex: 5;
   font-weight: bold;
 }
 
+#navLogo > span {
+  color: #b51b1d;
+}
+
 .navSection > ul > li > a {
+  text-transform: uppercase;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(58, 76, 98);
+  transition: 0.3s;
+}
+
+.navSection > ul > li > a.active,
+.navSection > ul > li > a:hover {
+  color: #b51b1d;
 }
 
 /* Hero Section */
@@ -85,7 +97,7 @@ body {
 
 .text-animation {
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 50%;
   width: 100%;
   transform: translate(-50%, -50%);
@@ -102,7 +114,7 @@ body {
   color: #135b80;
   opacity: 1;
   transition: all 2.5s ease;
-  background: linear-gradient(rgb(58, 76, 98) 20%, transparent 90%);
+  background: linear-gradient(rgb(58, 76, 98) 20%, transparent 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -192,24 +204,12 @@ body {
   transform: translate(30px, 200px);
 }
 
-div > span {
-  font-family: "Kalam", cursive;
-  text-transform: uppercase;
-  color: #e27e7e;
-  font-size: 40px;
-  font-weight: 400;
-  text-shadow: 2px 2px 5px #995555;
-  letter-spacing: 5px;
-  position: relative;
-  top: 230px;
-}
-
 /* About Section */
 
 .aboutSection {
   display: flex;
   justify-content: center;
-  background-image: url("/images/88847-pastelBG.jpg");
+  background-image: url("/images/background-pastel.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -300,6 +300,7 @@ blockquote {
 /* Service Section */
 
 .serviceSection {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -382,9 +383,14 @@ blockquote {
   letter-spacing: 1px;
   margin: 0px;
   padding: 0px;
-  /* text-shadow: 0px 0px 1px #000000; */
   text-shadow: -1px 0 #995555, 0 1px #995555, 1px 0 #995555, 0 -1px #995555;
 }
+
+h2 {
+  padding: 40px;
+  text-shadow: 2px 2px 2px #4646467a;
+}
+
 /* Contact section */
 
 .contactSection {
@@ -406,20 +412,25 @@ blockquote {
   width: 150px;
   border: 2px solid #2a799b;
   background-color: #2a799b;
-  margin-bottom: 40px;
   animation: move 1000ms infinite alternate;
   box-shadow: 2px 2px 1px 0px rgba(84, 85, 84, 0.19);
 }
 
 .centerContainer > .contact-text > h2 {
   text-shadow: 1px 1px 2px #e3eaf1;
+  padding-bottom: 10px;
+}
+
+.centerContainer > .contact-text > h3 {
+  text-shadow: 1px 1px 2px #e3eaf1;
+  padding-bottom: 20px;
 }
 
 .contactSection > .centerContainer > .cardContainer {
   text-transform: uppercase;
   display: flex;
   align-items: flex-start;
-  margin: 40px;
+  margin: 20px;
 }
 
 .cardBox {
@@ -454,6 +465,12 @@ hr {
   font-size: 10px;
   margin: 5px;
   padding: 3px;
+}
+
+.parking > h3 {
+  text-shadow: 1px 1px 2px #e3eaf1;
+  padding: 10px;
+  line-height: 30px;
 }
 
 /* Icon */
