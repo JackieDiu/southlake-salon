@@ -32,30 +32,28 @@ body {
 
 /* Navigation Section */
 
-.navSection {
-  display: flex;
+nav {
   font-size: 20px;
 }
 
-.navSection > ul {
+nav > ul {
   display: flex;
-  width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.navSection > ul > li {
+nav > ul > li {
   flex: 1;
   line-height: 35px;
   font-weight: bold;
   padding: 12px;
 }
 
-.navSection > ul > li > img {
+nav > ul > li > img {
   width: 7%;
   margin: -10px -5px -10px 20px;
 }
 
-.navSection > ul > #navLogo {
+nav > ul > #navLogo {
   text-transform: uppercase;
   font-size: 25px;
   flex: 5;
@@ -66,7 +64,7 @@ body {
   color: #b51b1d;
 }
 
-.navSection > ul > li > a {
+nav > ul > li > a {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 18px;
@@ -74,8 +72,8 @@ body {
   transition: 0.3s;
 }
 
-.navSection > ul > li > a.active,
-.navSection > ul > li > a:hover {
+nav > ul > li > a.active,
+nav > ul > li > a:hover {
   color: #b51b1d;
 }
 
@@ -84,7 +82,7 @@ body {
 .heroSection {
   display: flex;
   position: relative;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 40px);
   flex-direction: column;
   background-color: #5b93ca;
   background-image: url("/images/shop.jpg");
@@ -128,80 +126,74 @@ body {
 }
 
 .text-animation.hidden {
-  opacity: 1;
+  opacity: 0;
 }
 
 .text-animation.hidden li:nth-child(1) {
   transform: translate(-200px, -200px);
 }
-.text-animation.hidden li:nth-child(1) {
-  transform: translate(20px, 100px);
-}
-.text-animation.hidden li:nth-child(1) {
-  transform: translate(-150px, -80px);
-}
 .text-animation.hidden li:nth-child(2) {
-  transform: translate(10px, -200px);
+  transform: translate(20px, 100px);
 }
 .text-animation.hidden li:nth-child(3) {
-  transform: translate(-300px, 200px);
+  transform: translate(-150px, -80px);
 }
 .text-animation.hidden li:nth-child(4) {
-  transform: translate(20px, -20px);
+  transform: translate(10px, -200px);
 }
 .text-animation.hidden li:nth-child(5) {
-  transform: translate(30px, 200px);
+  transform: translate(-300px, 200px);
 }
 .text-animation.hidden li:nth-child(6) {
-  transform: translate(-200px, -100px);
+  transform: translate(20px, -20px);
 }
 .text-animation.hidden li:nth-child(7) {
-  transform: translate(-200px, -200px);
+  transform: translate(30px, 200px);
 }
 .text-animation.hidden li:nth-child(8) {
-  transform: translate(20px, 100px);
-}
-.text-animation.hidden li:nth-child(9) {
-  transform: translate(-150px, -80px);
-}
-.text-animation.hidden li:nth-child(10) {
-  transform: translate(10px, -200px);
-}
-.text-animation.hidden li:nth-child(11) {
-  transform: translate(-300px, 200px);
-}
-.text-animation.hidden li:nth-child(12) {
-  transform: translate(20px, -20px);
-}
-.text-animation.hidden li:nth-child(13) {
-  transform: translate(30px, 200px);
-}
-.text-animation.hidden li:nth-child(14) {
   transform: translate(-200px, -100px);
 }
-.text-animation.hidden li:nth-child(15) {
+.text-animation.hidden li:nth-child(9) {
   transform: translate(-200px, -200px);
 }
-.text-animation.hidden li:nth-child(16) {
+.text-animation.hidden li:nth-child(10) {
   transform: translate(20px, 100px);
 }
-.text-animation.hidden li:nth-child(17) {
-  transform: translate(20px, 100px);
-}
-.text-animation.hidden li:nth-child(18) {
+.text-animation.hidden li:nth-child(11) {
   transform: translate(-150px, -80px);
 }
-.text-animation.hidden li:nth-child(19) {
+.text-animation.hidden li:nth-child(12) {
   transform: translate(10px, -200px);
 }
-.text-animation.hidden li:nth-child(20) {
+.text-animation.hidden li:nth-child(13) {
   transform: translate(-300px, 200px);
 }
-.text-animation.hidden li:nth-child(21) {
+.text-animation.hidden li:nth-child(14) {
   transform: translate(20px, -20px);
 }
-.text-animation.hidden li:nth-child(22) {
+.text-animation.hidden li:nth-child(15) {
   transform: translate(30px, 200px);
+}
+.text-animation.hidden li:nth-child(16) {
+  transform: translate(-200px, -100px);
+}
+.text-animation.hidden li:nth-child(17) {
+  transform: translate(-200px, -200px);
+}
+.text-animation.hidden li:nth-child(18) {
+  transform: translate(20px, 100px);
+}
+.text-animation.hidden li:nth-child(19) {
+  transform: translate(20px, 100px);
+}
+.text-animation.hidden li:nth-child(20) {
+  transform: translate(-150px, -80px);
+}
+.text-animation.hidden li:nth-child(21) {
+  transform: translate(10px, -200px);
+}
+.text-animation.hidden li:nth-child(22) {
+  transform: translate(-300px, 200px);
 }
 
 /* About Section */
@@ -317,7 +309,7 @@ blockquote {
 
 .serviceSection > .centerContainer {
   width: 80%;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 40px);
 }
 
 .serviceSection > .centerContainer > h1 {
@@ -408,7 +400,7 @@ h3 {
 
 .contactSection > .centerContainer {
   width: 100%;
-  height: calc(100vh - 170px);
+  /* height: calc(100vh - 170px); */
 }
 
 .contactSection > .centerContainer > .contact-text > h1 {
