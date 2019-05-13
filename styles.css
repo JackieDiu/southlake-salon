@@ -10,6 +10,7 @@ li {
   margin: 0;
   padding: 0;
   list-style: none;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -39,10 +40,10 @@ nav {
 nav > ul {
   position: fixed;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  background: #fff;
+  width: 100%;
+  height: 60px;
   z-index: 1;
 }
 
@@ -106,7 +107,7 @@ nav > ul > li > a:hover::before {
 .heroSection {
   display: flex;
   position: relative;
-  height: calc(100vh - 40px);
+  height: calc(100vh - 10px);
   flex-direction: column;
   background-color: #5b93ca;
   background-image: url("/images/shop.jpg");
@@ -232,7 +233,7 @@ nav > ul > li > a:hover::before {
   background-size: cover;
   position: relative;
   text-align: center;
-  padding: 60px;
+  padding: 70px;
 }
 
 .aboutSection > .centerContainer {
@@ -328,12 +329,12 @@ blockquote {
   background-size: cover;
   align-items: center;
   text-align: center;
-  padding: 40px;
+  padding: 70px;
 }
 
 .serviceSection > .centerContainer {
-  width: 80%;
-  height: calc(100vh - 40px);
+  width: 90%;
+  height: calc(100vh - 140px);
 }
 
 .serviceSection > .centerContainer > h1 {
@@ -418,13 +419,13 @@ h3 {
 .contactSection {
   margin: 20px auto;
   color: #344c64;
-  padding-top: 32px;
+  padding: 30px 70px 0 70px;
   text-align: center;
 }
 
 .contactSection > .centerContainer {
   width: 100%;
-  /* height: calc(100vh - 170px); */
+  height: calc(100vh - 170px);
 }
 
 .contactSection > .centerContainer > .contact-text > h1 {
@@ -435,7 +436,7 @@ h3 {
   width: 150px;
   border: 2px solid #2a799b;
   background-color: #2a799b;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   animation: move 1000ms infinite alternate;
   box-shadow: 2px 2px 1px 0px rgba(84, 85, 84, 0.19);
 }
@@ -505,9 +506,9 @@ hr {
 
 /* Footer Social Section */
 
-.socialSection {
+footer.socialSection {
   width: 100%;
   align-items: center;
   text-align: center;
-  padding: 30px;
+  padding-bottom: 30px;
 }
