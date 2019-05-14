@@ -237,7 +237,7 @@ nav > ul > li > a:hover::before {
 }
 
 .aboutSection > .centerContainer {
-  width: 80%;
+  width: 100%;
 }
 
 .aboutSection > .centerContainer > h1 {
