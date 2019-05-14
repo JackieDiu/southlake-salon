@@ -14,7 +14,7 @@
           <img src="images/logo.png" alt="flower-Logo" />
           South Lake <span>Nail</span> Design
         </li>
-        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -317,5 +317,26 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDBvsWdLpqg3nNkhcDdaYfTxLOpUFVprHY",
+        authDomain: "southlakenaildesign.firebaseapp.com",
+        databaseURL: "https://southlakenaildesign.firebaseio.com",
+        projectId: "southlakenaildesign",
+        storageBucket: "southlakenaildesign.appspot.com",
+        messagingSenderId: "282635170205",
+        appId: "1:282635170205:web:cbaa3972abc652c2"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
   </body>
 </html>
