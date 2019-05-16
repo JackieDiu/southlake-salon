@@ -110,7 +110,7 @@ nav > ul > li > a:hover::before {
   height: calc(100vh - 10px);
   flex-direction: column;
   background-color: #5b93ca;
-  background-image: url("/images/shop.jpg");
+  background-image: url("images/shop.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -226,7 +226,7 @@ nav > ul > li > a:hover::before {
 .aboutSection {
   display: flex;
   justify-content: center;
-  background-image: url("/images/background-pastel.jpg");
+  background-image: url("images/background-pastel.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -249,7 +249,7 @@ nav > ul > li > a:hover::before {
   width: 150px;
   border: 2px solid #f6d9eb;
   background-color: #f6d9eb;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   animation: move 1000ms infinite alternate;
   box-shadow: 2px 2px 1px 0px rgba(84, 85, 84, 0.19);
 }
@@ -323,18 +323,18 @@ blockquote {
   flex-direction: column;
   color: #fff;
   background-color: #8fbeee;
-  background-image: url("/images/1125632.svg");
+  background-image: url("images/1125632.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
   text-align: center;
-  padding: 70px;
+  padding: 60px;
 }
 
 .serviceSection > .centerContainer {
   width: 90%;
-  height: calc(100vh - 140px);
+  height: calc(100vh - 120px);
 }
 
 .serviceSection > .centerContainer > h1 {
@@ -347,7 +347,7 @@ blockquote {
   width: 150px;
   border: 2px solid #e5f6fd;
   background-color: #e5f6fd;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   animation: move 1000ms infinite alternate;
   box-shadow: 2px 2px 1px 0px rgba(84, 85, 84, 0.19);
 }
@@ -410,8 +410,7 @@ blockquote {
 h3 {
   width: 80%;
   margin: 0 auto;
-  padding-top: 40px;
-  text-shadow: 2px 2px 5px #4646467a;
+  padding-top: 20px;
 }
 
 /* Contact section */
@@ -436,14 +435,14 @@ h3 {
   width: 150px;
   border: 2px solid #2a799b;
   background-color: #2a799b;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   animation: move 1000ms infinite alternate;
   box-shadow: 2px 2px 1px 0px rgba(84, 85, 84, 0.19);
 }
 
 .centerContainer > .contact-text > h2 {
   text-shadow: 1px 1px 2px #e3eaf1;
-  padding-bottom: 20px;
+  padding: 10px;
 }
 
 .contactSection > .centerContainer > .cardContainer {
@@ -457,8 +456,18 @@ h3 {
   width: calc(400px - 50px);
   border: 2px solid #344c64;
   border-radius: 10px;
-  padding: 30px;
+  padding: 15px;
   margin: 0 20px;
+}
+
+.cardBox > .text {
+  font-size: 16px;
+  padding: 6px;
+}
+
+.cardBox > .contact-info {
+  font-size: 18px;
+  padding: 10px;
 }
 
 .box1 {
@@ -471,7 +480,7 @@ h3 {
 
 .box3 {
   flex: 1;
-  padding: 40px 30px;
+  padding: 25px 15px;
 }
 
 hr {
@@ -482,14 +491,14 @@ hr {
 }
 
 .cardBox > ul > li > p {
-  font-size: 10px;
-  margin: 5px;
+  font-size: 18px;
+  margin: 0px;
   padding: 3px;
 }
 
 .parking > h3 {
   text-shadow: 1px 1px 2px #e3eaf1;
-  padding-top: 20px;
+  padding-top: 5px;
   line-height: 30px;
 }
 
@@ -497,8 +506,8 @@ hr {
 
 .icon {
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
