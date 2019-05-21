@@ -45,7 +45,6 @@ nav > ul {
 }
 
 ul > #navLogo {
-  text-align: center;
   font-size: 20px;
   font-weight: 900;
 }
@@ -66,29 +65,6 @@ ul > li > img {
   width: 50px;
 }
 
-nav > ul > li > a.active,
-nav > ul > li > a:hover {
-  color: #b51b1d;
-}
-
-nav > ul > li > a::before {
-  content: "";
-  display: block;
-  height: 5px;
-  background: rgb(58, 76, 98);
-  position: absolute;
-  top: -10px;
-  left: 0;
-  right: 0;
-  transform: scale(0, 1);
-  transition: transform ease-in-out 250ms;
-}
-
-nav > ul > li > a.active::before,
-nav > ul > li > a:hover::before {
-  transform: scale(1, 1);
-}
-
 /* hero section */
 
 .heroSection {
@@ -98,28 +74,33 @@ nav > ul > li > a:hover::before {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 22px;
 }
 
 .heroSection > ul > li {
   font-size: 40px;
   font-weight: 900;
   color: #fff;
-  letter-spacing: 16px;
-  line-height: 20px;
-  margin: 10px auto;
+  letter-spacing: 20px;
+  line-height: 50px;
+  margin: 5px auto;
+  padding: 0px;
   text-shadow: 3px 3px 3px #344c644b;
 }
 
 .text-animation > .spaces {
-  margin-left: 30px;
+  margin: 0 20px;
 }
 
 .text-animation > .space {
-  margin: 0 30px;
+  margin: 0 40px;
 }
 
 .text-animation > .spacing {
-  margin: 20px;
+  margin: 0 30px;
   padding: 0 20px;
 }
 
@@ -201,7 +182,6 @@ blockquote {
 .serviceSection {
   display: flex;
   flex-direction: column;
-  color: #fff;
   background-color: #8fbeee;
   background-image: url("images/1125632.svg");
   background-position: center;
@@ -250,7 +230,9 @@ blockquote {
 }
 
 .priceList > .image-box > img {
-  width: 100%;
+  width: 75%;
+  transform: rotate(270deg);
+  margin: -30px;
   box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 3, 0, 0.19);
 }
 
@@ -270,6 +252,7 @@ blockquote {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 16px;
 }
 
 .service-box > ul > li > p {
@@ -277,14 +260,14 @@ blockquote {
   font-size: 16px;
   letter-spacing: 1px;
   margin: 0px;
-  padding: 0px;
+  padding: 3px;
   text-align: right;
 }
 
-h3 {
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 20px;
+.centerContainer > h3 {
+  width: 90%;
+  margin: 10px auto;
+  padding-top: 10px;
 }
 
 /* Contact section */
@@ -401,24 +384,92 @@ hr {
 /* ************ IPAD MEDIA ***************************** */
 
 @media screen and (min-width: 750px) {
+  nav > ul {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.678);
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+  }
+
+  nav > ul > li {
+    flex: 1;
+    line-height: 35px;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  nav > ul > li > img {
+    width: 15%;
+    margin: -10px -5px -10px 20px;
+  }
+
+  nav > ul > #navLogo {
+    flex: 5;
+    font-weight: bold;
+  }
+
+  #navLogo > span {
+    color: #b51b1d;
+  }
+
+  nav > ul > li > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(58, 76, 98);
+    transition: 0.3s;
+    position: relative;
+  }
+
+  nav > ul > li > a.active,
+  nav > ul > li > a:hover {
+    color: #b51b1d;
+  }
+
+  nav > ul > li > a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: rgb(58, 76, 98);
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+
+  nav > ul > li > a.active::before,
+  nav > ul > li > a:hover::before {
+    transform: scale(1, 1);
+  }
+
+  /* Hero Section */
+
+  .heroSection {
+    height: calc(100vh - 10px);
+  }
+
   .text-animation {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 50%;
     width: 90%;
     transform: translate(-50%, -50%);
-    margin: 0;
+    margin: 15px;
     padding: 0;
     text-transform: uppercase;
   }
 
   .heroSection > ul > li {
     display: inline-block;
-    font-size: 90px;
-    margin: 5px auto;
+    font-size: 110px;
     font-weight: 900;
     letter-spacing: 20px;
-    line-height: 80px;
+    line-height: 90px;
     opacity: 1;
     transition: all 2.5s ease;
     background: linear-gradient(rgb(58, 76, 98) 30%, transparent 80%);
@@ -428,11 +479,11 @@ hr {
   }
 
   .text-animation > .spaces {
-    margin-left: 60px;
+    margin: 0 50px;
   }
 
   .text-animation > .space {
-    margin: 0 90px;
+    margin: 0 95px;
   }
 
   .text-animation > .spacing {
@@ -549,18 +600,12 @@ hr {
 
   .aboutItemBox > hr {
     width: 70px;
-    border: 2px solid #f6d9eb;
-    background-color: #f6d9eb;
-    margin-bottom: 40px;
-    box-shadow: 2px 2px 1px 0px rgba(84, 85, 84, 0.19);
   }
 
   /* Service Section  */
 
   .serviceSection > .centerContainer > h1 {
     font-size: 60px;
-    color: rgb(58, 76, 98);
-    text-shadow: 2px 2px 2px #344c644b;
   }
 
   .serviceSection > .centerContainer > hr {
@@ -568,59 +613,278 @@ hr {
   }
 
   .serviceSection > .centerContainer > p {
-    font-weight: 400;
-    font-size: 10px;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 5px #4646467a;
-    margin: 20px;
+    font-weight: 600;
+    font-size: 22px;
   }
 
-  /* .serviceSection > .centerContainer > .priceList {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  text-transform: uppercase;
-  border: 5px solid #e5f6fd65;
-  box-shadow: 0 2px 4px 0 rgba(1, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 3, 0, 0.19);
-} */
+  .serviceSection > .centerContainer > .priceList {
+    width: 80%;
+    margin: 8px auto;
+  }
 
-  /* .priceList > .image-box > img {
-  width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(1, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 3, 0, 0.19);
+  .priceList > .image-box > img {
+    width: 70%;
+    margin: -50px;
+  }
+
+  .priceList > .service-box > ul > li {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+
+  .service-box > ul > li > p {
+    font-size: 20px;
+  }
+
+  .centerContainer > h3 {
+    font-size: 20px;
+  }
+
+  /* Contact section */
+
+  .contactSection > .centerContainer > .contact-text > h1 {
+    font-size: 60px;
+  }
+
+  .centerContainer > .contact-text > hr {
+    width: 125px;
+  }
+
+  .centerContainer > .contact-text > h2 {
+    font-size: 25px;
+  }
+
+  .contactSection > .centerContainer > .cardContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cardBox {
+    flex: 1;
+    margin: 8px 5px;
+    color: #000;
+    font-weight: 400;
+  }
+
+  .parking > h3 {
+    width: 90%;
+    font-size: 20px;
+  }
+
+  /* Footer Social Section */
+
+  .socialSection {
+    padding: 30px 0 10px;
+  }
 }
 
-.image-box {
-  flex: 1;
-} */
+/* **************** 800 media **************** */
 
-  /* .service-box {
-  flex: 1;
-  box-shadow: 0 2px 4px 0 rgba(1, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 3, 0, 0.19);
-  text-align: center;
-  border: 2px solid #2a799b;
-  margin: 8px 0;
-} */
+@media screen and (min-width: 800px) {
+  /*  HERO SECTION  */
 
-  /* .priceList > .service-box > ul > li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-} */
+  .heroSection > ul > li {
+    font-size: 85px;
+    letter-spacing: 10px;
+    margin: 10px 0;
+  }
 
-  /* .service-box > ul > li > p {
-  color: #db1a1a;
-  font-size: 16px;
-  letter-spacing: 1px;
-  margin: 0px;
-  padding: 0px;
-  text-align: right;
-} */
+  .text-animation > .spaces {
+    margin: 0 20px;
+    padding: 0px;
+  }
 
-  /* h3 {
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 20px;
-} */
+  .text-animation > .space {
+    margin: 0px;
+  }
+
+  .text-animation > .spacing {
+    margin: 0 5px;
+  }
+
+  /* About section */
+
+  .aboutSection > .centerContainer > h1 {
+    font-size: 40px;
+  }
+
+  .aboutSection > .centerContainer > hr {
+    width: 100px;
+  }
+
+  .aboutSection h2 {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 20px;
+  }
+
+  .aboutItemBox > p {
+    font-size: 20px;
+  }
+
+  blockquote {
+    font-size: 20px;
+  }
+
+  /* Service Section  */
+
+  .serviceSection > .centerContainer > h1 {
+    font-size: 40px;
+  }
+
+  .serviceSection > .centerContainer > hr {
+    width: 100px;
+  }
+
+  .serviceSection > .centerContainer > p {
+    font-size: 18px;
+  }
+
+  .priceList > .image-box > img {
+    width: 60%;
+    margin: -50px;
+  }
+
+  .priceList > .service-box > ul > li {
+    padding: 10px 8px;
+    font-size: 18px;
+  }
+
+  .service-box > ul > li > p {
+    font-size: 18px;
+  }
+
+  .centerContainer > h3 {
+    font-size: 18px;
+  }
+
+  /* Contact section */
+
+  .contactSection > .centerContainer > .contact-text > h1 {
+    font-size: 40px;
+  }
+
+  .centerContainer > .contact-text > hr {
+    width: 100px;
+  }
+
+  .centerContainer > .contact-text > h2 {
+    font-size: 20px;
+  }
+
+  .parking > h3 {
+    font-size: 18px;
+  }
+}
+
+/* **************** 1200 media **************** */
+
+@media screen and (min-width: 1200px) {
+  nav > ul {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.678);
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+  }
+
+  nav > ul > li {
+    padding: 25px;
+  }
+
+  /*  HERO SECTION  */
+
+  /* .text-animation {
+    top: 25%;
+  }
+
+  .heroSection > ul > li {
+    letter-spacing: 10px;
+    margin: 10px 0;
+    padding: 0px;
+  }
+
+  .text-animation > .spaces {
+    margin: 0 35px;
+    padding: 0 4px;
+  }
+
+  .text-animation > .space {
+    margin: 0px;
+  }
+
+  .text-animation > .spacing {
+    margin: 0 20px;
+  } */
+
+  /* About section */
+
+  /* .aboutSection > .centerContainer > h1 {
+    font-size: 40px;
+  }
+
+  .aboutSection > .centerContainer > hr {
+    width: 100px;
+  }
+
+  .aboutSection h2 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  .aboutContainer .aboutItemBox {
+    margin: 30px 5px 5px;
+    align-self: center;
+  }
+
+  .aboutItemBox > p {
+    font-size: 18px;
+  }
+
+  blockquote {
+    width: 90%;
+    margin: 16px auto;
+    font-size: 18px;
+  } */
+
+  /* Service Section  */
+
+  /* .serviceSection > .centerContainer > h1 {
+    font-size: 40px;
+  }
+
+  .serviceSection > .centerContainer > hr {
+    width: 100px;
+  }
+
+  .serviceSection > .centerContainer > p {
+    font-size: 16px;
+  }
+
+  .priceList > .image-box > img {
+    margin: -40px;
+  } */
+
+  /* Contact section */
+  /* 
+  .contactSection > .centerContainer > .contact-text > h1 {
+    font-size: 40px;
+  }
+
+  .centerContainer > .contact-text > hr {
+    width: 100px;
+  }
+
+  .centerContainer > .contact-text > h2 {
+    font-size: 20px;
+  }
+
+  .parking > h3 {
+    font-size: 18px;
+  } */
 }
 
 @media screen and (min-width: 1600px) {
