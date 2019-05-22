@@ -768,7 +768,7 @@ hr {
 
   .serviceSection > .centerContainer {
     width: 100%;
-    height: calc(100vh - 125px);
+    height: calc(100vh - 100px);
   }
 
   .serviceSection > .centerContainer > h1 {
@@ -785,6 +785,7 @@ hr {
 
   .serviceSection > .centerContainer > .priceList {
     width: 100%;
+    height: calc(70vh - 100px);
     display: flex;
     flex-direction: row;
   }
@@ -798,11 +799,12 @@ hr {
     box-shadow: 0 2px 4px 0 rgba(1, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 3, 0, 0.19);
     text-align: center;
     border: 2px solid #2a799b;
-    margin: 0px 8px;
+    margin: 8px 8px;
   }
 
   .priceList > .service-box > ul > li {
     font-size: 16px;
+    padding: 15px 5px;
   }
 
   .service-box > ul > li > p {
@@ -887,7 +889,7 @@ hr {
 
   .serviceSection {
     position: relative;
-    padding: 60px 10px;
+    padding: 60px 0;
   }
 
   .serviceSection > .centerContainer {
@@ -911,13 +913,14 @@ hr {
   .serviceSection > .centerContainer > .priceList {
     width: 90%;
     margin: 5px auto;
+    padding: 0;
   }
 
   .priceList > .image-box > img {
     position: relative;
-    width: 90%;
+    width: 75%;
     transform: rotate(360deg);
-    margin: 20px auto;
+    margin: 10px auto;
   }
 
   .image-box {
@@ -926,12 +929,11 @@ hr {
 
   .service-box {
     flex: 1;
-    margin: 0 10px;
   }
 
   .priceList > .service-box > ul > li {
     font-size: 16px;
-    padding: 18px 10px;
+    padding: 15px 15px;
   }
 
   .service-box > ul > li > p {
@@ -1047,6 +1049,20 @@ hr {
 
   .serviceSection > .centerContainer > .priceList {
     width: 95%;
+    height: 60%;
+  }
+
+  .image-box {
+    flex: 1;
+  }
+
+  .service-box {
+    flex: 1;
+  }
+
+  .priceList > .service-box > ul > li {
+    font-size: 16px;
+    padding: 15px 15px;
   }
 
   .centerContainer > h3 {
