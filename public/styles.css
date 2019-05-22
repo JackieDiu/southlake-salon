@@ -71,7 +71,7 @@ ul > li > img {
 .heroSection {
   width: 100%;
   height: calc(100vh - 100px);
-  background-image: url("/public/images/shop.jpg");
+  background-image: url("images/shop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -108,7 +108,7 @@ ul > li > img {
 /* About section */
 
 .aboutSection {
-  background-image: url("/public/images/background-pastel.jpg");
+  background-image: url("images/background-pastel.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -191,7 +191,7 @@ blockquote {
   display: flex;
   flex-direction: column;
   background-color: #8fbeee;
-  background-image: url("/public/images/1125632.svg");
+  background-image: url("images/1125632.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
