@@ -914,9 +914,10 @@ hr {
   }
 
   .priceList > .image-box > img {
-    width: 85%;
+    position: relative;
+    width: 90%;
     transform: rotate(360deg);
-    margin: 0px;
+    margin: 20px auto;
   }
 
   .image-box {
