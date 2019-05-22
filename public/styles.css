@@ -274,10 +274,7 @@ blockquote {
 }
 
 .centerContainer h3 {
-  text-align: center;
-  align-items: center;
-  margin: 0px auto;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 /* Contact section */
@@ -660,7 +657,7 @@ hr {
     padding: 0;
   }
 
-  .centerContainer > h3 {
+  .centerContainer h3 {
     font-size: 20px;
   }
 
@@ -936,10 +933,6 @@ hr {
 
   .service-box > ul > li > p {
     font-size: 16px;
-  }
-
-  .centerContainer h3 {
-    position: absolute;
   }
 
   /* Contact section *** 1200 media ****/
