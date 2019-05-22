@@ -191,7 +191,7 @@ blockquote {
   display: flex;
   flex-direction: column;
   background-color: #8fbeee;
-  background-image: url("images/1125632.svg");
+  background-image: url("/public/images/1125632.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
