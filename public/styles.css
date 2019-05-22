@@ -845,7 +845,7 @@ hr {
   /* Hero Section *** 1200 media ****/
 
   .heroSection > ul > li {
-    font-size: 73px;
+    font-size: 95px;
     letter-spacing: 0px;
     margin: 0px;
   }
@@ -855,16 +855,16 @@ hr {
   }
 
   .text-animation > .spaces {
-    margin: 0 6px;
+    margin: 0 10px;
     padding: 0px;
   }
 
   .text-animation > .space {
-    margin: 0 6px;
+    margin: 0 10px;
   }
 
   .text-animation > .spacing {
-    margin: 0 6px;
+    margin: 0 10px;
   }
 
   /* About section *** 1200 media ****/
