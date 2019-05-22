@@ -942,7 +942,8 @@ hr {
   }
 
   .contactSection > .centerContainer {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     height: calc(100vh - 130px);
   }
 
@@ -960,6 +961,14 @@ hr {
 
   .cardBox {
     margin: 0 20px;
+  }
+
+  .contactSection > .centerContainer > .cardContainer {
+    align-items: flex-start;
+  }
+
+  .box3 {
+    padding: 25px 15px;
   }
 
   .cardBox > .list {
@@ -1025,7 +1034,7 @@ hr {
     margin: 0 auto;
   }
 
-  /* Service Section *** 1200 media ****/
+  /* Service Section *** 1600 MEDIA ****/
 
   .serviceSection > .centerContainer {
     width: 80%;
@@ -1041,7 +1050,7 @@ hr {
     padding: 30px;
   }
 
-  /* Contact section *** 1200 media ****/
+  /* Contact section *** 1600 MEDIA ****/
 
   .contactSection > .centerContainer {
     width: 80%;
@@ -1052,16 +1061,8 @@ hr {
     font-size: 50px;
   }
 
-  .contactSection > .centerContainer > .cardContainer {
-    align-items: flex-start;
-  }
-
   .centerContainer > .contact-text > h2 {
     padding: 25px;
-  }
-
-  .box3 {
-    padding: 25px 15px;
   }
 
   .parking > h3 {
