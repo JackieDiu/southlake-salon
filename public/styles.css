@@ -224,7 +224,7 @@ blockquote {
 
 .serviceSection > .centerContainer > p {
   font-weight: 400;
-  font-size: 25px;
+  font-size: 18px;
   text-transform: uppercase;
   text-shadow: 2px 2px 5px #4646467a;
   margin: 20px;
@@ -768,7 +768,7 @@ hr {
 
   .serviceSection > .centerContainer {
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 50px);
   }
 
   .serviceSection > .centerContainer > h1 {
@@ -785,7 +785,7 @@ hr {
 
   .serviceSection > .centerContainer > .priceList {
     width: 100%;
-    height: calc(70vh - 100px);
+    height: calc(70vh - 35px);
     display: flex;
     flex-direction: row;
   }
@@ -877,7 +877,7 @@ hr {
   }
 
   .aboutSection > .centerContainer {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -893,9 +893,10 @@ hr {
   }
 
   .serviceSection > .centerContainer {
-    width: 90%;
+    width: 80%;
+    height: auto;
     margin: 0 auto;
-    height: calc(100vh - 125px);
+    height: calc(100vh - 80px);
   }
 
   .serviceSection > .centerContainer > h1 {
@@ -911,6 +912,7 @@ hr {
   }
 
   .serviceSection > .centerContainer > .priceList {
+    height: auto;
     width: 90%;
     margin: 5px auto;
     padding: 0;
@@ -933,7 +935,7 @@ hr {
 
   .priceList > .service-box > ul > li {
     font-size: 16px;
-    padding: 15px 15px;
+    padding: 12px 15px;
   }
 
   .service-box > ul > li > p {
@@ -1066,7 +1068,7 @@ hr {
   }
 
   .centerContainer > h3 {
-    padding: 30px;
+    padding: 40px;
   }
 
   /* Contact section *** 1600 MEDIA ****/
